@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ALAFIIA Admin - Create Campsite</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <img src="img/logo.png" alt="Alafiia Logo">
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          
+          <span>Dashboard</span></a>
+      </li>
+
+  
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          
+          <span>Camp Bookings</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Booking Details</h6>
+            <a class="collapse-item" href="all-booking.html">All Bookings</a>
+            <a class="collapse-item" href="cards.html">Before Booking Data </a>
+            <a class="collapse-item" href="utilities-border.html">Refund Booking</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+          
+          <span>Activities </span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Riding :</h6>
+            <a class="collapse-item" href="utilities-color.html">Riding</a>
+            <a class="collapse-item" href="utilities-border.html">Trakking</a>
+          </div>
+        </div>
+      </li>
+      <!-- Nav Item - Utilities Collapse Menu -->
+     
+      <!-- Nav Item - Coupon -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#report" aria-expanded="true" aria-controls="collapseUtilities">
+          
+          <span>Report</span>
+        </a>
+        <div id="report" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Report Generate :</h6>
+            <a class="collapse-item" href="campsite-report-generate.html">Campsite Report</a>
+            <a class="collapse-item" href="our-report.html">Our Report</a>
+          </div>
+        </div>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#bookingForm" aria-expanded="true" aria-controls="bookingForm">
+          
+          <span>Booking Form</span>
+        </a>
+        <div id="bookingForm" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Form :</h6>
+            <a class="collapse-item" href="destinations-slider.html">Destinations Slider</a>
+            <a class="collapse-item" href="create-destinations.html">Destinations</a>
+            <a class="collapse-item" href="create-campsite.html">Campsite</a>
+            <a class="collapse-item" href="stay-option.html">Stay Options</a>
+            <a class="collapse-item" href="payment-mode.html">Payment Mode</a>
+            <a class="collapse-item" href="coupon-code.html">Coupon Code</a>
+            <a class="collapse-item" href="cancellation-conditions.html">Cancellation Conditions</a>
+            <a class="collapse-item" href="join-travellers-club.html">join Travellers' Club</a>
+            <a class="collapse-item" href="add-on.html">Add On</a>
+            <a class="collapse-item" href="house-full.html">House-full</a>
+            <a class="collapse-item" href="travellers-exprience.html">Travellers' Exprience</a>
+          </div>
+        </div>
+      </li>
+
+       <!-- Nav Item - Utilities Collapse Menu -->
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#allUsers" aria-expanded="true" aria-controls="allUsers">
+          
+          <span>All Users</span>
+        </a>
+        <div id="allUsers" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Users :</h6>
+            <a class="collapse-item" href="utilities-color.html">Customizable User</a>
+            <a class="collapse-item" href="utilities-border.html">Camp Buddy User</a>
+            <a class="collapse-item" href="utilities-border.html">Travel Agent User</a>
+          </div>
+        </div>
+      </li>
+  
+      
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+          
+          <span>Email Sending</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+          
+          <span>Review Data</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#website" aria-expanded="true" aria-controls="website">
+          
+          <span>Website</span>
+        </a>
+        <div id="website" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">All Details :</h6>
+            <a class="collapse-item" href="utilities-color.html">Top Bar</a>
+            <a class="collapse-item" href="utilities-border.html">Login</a>
+            <a class="collapse-item" href="utilities-border.html">Ragister</a>
+            <a class="collapse-item" href="utilities-border.html">User Profile</a>
+            <a class="collapse-item" href="utilities-border.html">Navigation</a>
+            <a class="collapse-item" href="utilities-border.html">Banner</a>
+            <a class="collapse-item" href="utilities-border.html">What We Do</a>
+            <a class="collapse-item" href="utilities-border.html">Camping Destinations</a>
+            <a class="collapse-item" href="utilities-border.html">Punch Line Section</a>
+            <a class="collapse-item" href="utilities-border.html">Travellers Exprience</a>
+            <a class="collapse-item" href="utilities-border.html">Alafiian Riders</a>
+            <a class="collapse-item" href="utilities-border.html">News & Events</a>
+            <a class="collapse-item" href="utilities-border.html">Punch Line Section2</a>
+            <a class="collapse-item" href="utilities-border.html">footer</a>
+            <a class="collapse-item" href="utilities-border.html">Motorcycle Tours</a>
+            <a class="collapse-item" href="utilities-border.html">Contact</a>
+          
+          </div>
+        </div>
+      </li>
+
+          
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#employeeManag" aria-expanded="true" aria-controls="employeeManag">
+          
+          <span>Employee Manag.. </span>
+        </a>
+        <div id="employeeManag" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Employee :</h6>
+            <a class="collapse-item" href="utilities-color.html">Team Details</a>
+            <!-- <a class="collapse-item" href="utilities-border.html">Trakking</a> -->
+          </div>
+        </div>
+      </li>
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+
+           
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Bijoyan Mondal</span>
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+ <!-- Begin Page Content -->
+ <div class="container-fluid">
+
+  <!-- Page Heading -->
+  <!-- <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+  <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p> -->
+
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">Campsite</h6>
+    </div>
+    <div class="card-body">
+<div class="topfilterSecBookingall">
+        <div class="row topfilterSec">
+            <div class="col-md-12">
+          <div class="Bttnrght text-right">
+            
+            <div class="flterdwnld justify-content-center">
+              <div class="form-group dateflterdwnld">
+                  <input type="text" placeholder="Destination" class="form-control form-control-sm" id="colFormLabelSm">
+              </div>
+              <div class="form-group dateflterdwnld">
+                <input type="text" placeholder="Campsite Name" class="form-control form-control-sm" id="colFormLabelSm">
+            </div>
+            <div class="form-group dateflterdwnld">
+              <input type="text" placeholder="Campsite Detais" class="form-control form-control-sm" id="colFormLabelSm">
+          </div>
+            <div class="form-group dateflterdwnld">
+              <input type="text" placeholder="Campsite User Detais" class="form-control form-control-sm" id="colFormLabelSm">
+          </div>
+              <div class="btn-dwnldFlt">
+                <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                  <span class="icon text-white-50">
+                    <i class="fas fa-plus"></i>
+                  </span>
+                  <span class="text">Create Campsite</span>
+                </a>
+            </div> 
+          </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+
+<div class="dataTables_wrapper dt-bootstrap4">
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+    <div class="dataTables_length" id="dataTable_length">
+      <label>Show <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label>
+    </div></div>
+      
+      <div class="col-sm-12 col-md-6">
+        <div id="dataTable_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable"></label>
+        </div></div>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered" width="100%" cellspacing="0">
+          <thead>
+            <tr>
+
+              <th>Destination</th>
+              <th>Campsite Name</th>
+              <th>Campsite Detais</th>
+              <th>Campsite User Detais</th> 
+              <th></th>
+            </tr>
+          </thead>
+        
+          <tbody>
+            <tr role="row" class="odd">
+          
+              <td>Destination</td>
+              <td>Campsite Name</td>
+              <td>Campsite Detais</td>
+              <td>Campsite User Detais</td> 
+              <td>
+                <div class="tableBttn">
+                
+                  <a href="#" data-toggle="modal" data-target="#editBookingModal" class="btn btn-info btn-circle btn-sm" data-placement="top" title="Edit">
+                    <i class="far fa-edit"></i>
+                  </a>
+                  <a href="#" data-toggle="modal" data-dismiss="modal" aria-label="Close" data-target="#deleteCampSiteRateModal" class="btn btn-danger btn-circle btn-sm" data-placement="top" title="Delete">
+                    <i class="far fa-trash-alt"></i>
+                  </a>
+                  
+                  </div>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+       <!-- Pagination -->
+       <div class="row">
+        <div class="col-sm-12 col-md-5">
+          <div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div></div>
+          <div class="col-sm-12 col-md-7">
+            
+            <div class="dataTables_paginate paging_simple_numbers">
+              <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <span class="page-link">Previous</span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active" aria-current="page">
+                    <span class="page-link">
+                      2
+                      <span class="sr-only">(current)</span>
+                    </span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div> 
+          </div></div>
+    </div>
+    </div>
+  </div>
+
+</div>
+       
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!-- Edit Booking Details Modal-->
+<div class="modal fade" id="editBookingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Campsite</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+        <form>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Destination :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="Destination"  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Camsite :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="Campsite"  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Campsite User Detais :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="Campsite User Detais"  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          
+          
+          
+          </form>
+      
+  </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+        <a class="btn btn-primary" href="#" data-dismiss="modal" aria-label="Close" >Submit</a>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Refund Modal-->
+<div class="modal fade" id="refundModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ready to Refund?</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">Select "Refund" below if you are ready to end your current session.</div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+        <a class="btn btn-primary" href="#">Refund</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Create Custom Booking Modal -->
+<div class="modal fade" id="createCustomBookingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create Custom Booking</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Payment Id :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder=""  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Booking Date :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder=""  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Name :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder=""  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Phone Number :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder=""  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Email Id :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder=""  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Check In Date :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="DD-MAY-YYYY"  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Check Out Date :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="DD-MAY-YYYY"  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Day :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="DD-MAY-YYYY"  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Destinations :</label>
+            <div class="col-sm-8">
+              <div class="selectPaymentMthd">
+                <select class="custom-select custom-select-sm">
+                  <option selected>Select Destination</option>
+                  <option value="0">Mousuni Island Travellers' Camp</option>
+                  <option value="1">Sitarampur Travellers' Camp</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Campsite :</label>
+            <div class="col-sm-8">
+              <div class="selectPaymentMthd">
+                <select class="custom-select custom-select-sm">
+                  <option selected>Select Campsite</option>
+                  <option value="0">Camp ground</option>
+                  <option value="1">Hut ground</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Stay :</label>
+            <div class="col-sm-8">
+              <div class="selectPaymentMthd">
+                <select class="custom-select custom-select-sm">
+                  <option selected>Adventure Dom Tent</option>
+                  <option value="0">Family Tent</option>
+                  <option value="1">Traveller Cottage</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Adult :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder=""  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Child :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder=""  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Note :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder=""  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Status :</label>
+            <div class="col-sm-8">
+              <div class="selectStatus">
+                <select class="custom-select custom-select-sm">
+                  <option selected>Select Status</option>
+                  <option value="0">In-Prosses</option>
+                  <option value="1">Completed</option>
+                  <option value="2">Reschedule</option>
+                  <option value="3">Canclelled or Refund</option>
+                </select>
+                
+              </div>
+              </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Booking Rate :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder=""  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Total Amount :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder=""  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Coupon Code :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder=""  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Discount :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder=""  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Payment Method :</label>
+            <div class="col-sm-8">
+              <div class="selectPaymentMthd">
+                <select class="custom-select custom-select-sm">
+                  <option selected>Select Payment Method</option>
+                  <option value="0">Half Payment</option>
+                  <option value="1">Full Payment</option>
+                  <option value="1">None</option>
+                </select>
+              </div> 
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Booking Amount :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder=""  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Payment Due :</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder=""  class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          
+          
+          </form>
+      
+  </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#refundModal" data-dismiss="modal" aria-label="Close" >Submit</a>
+        <!-- <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#editBookingModal" >Reschedule</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Delete Campsite rate Modal-->
+<div class="modal fade" id="deleteCampSiteRateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magnam facere incidunt vitae repellendus. Pariatur.</div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+        <a class="btn btn-danger" href="login.html">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+    <script>
+      $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    </script>
+</body>
+
+</html>
